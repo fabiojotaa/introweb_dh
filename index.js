@@ -20,16 +20,18 @@ const usuarios = [{
     idade: 27,
 }];
 
-app.get('/usuarios', (request, response) => {
-    response.json(usuarios);
+// app.get('/usuarios', (request, response) => {
+//     response.json(usuarios);
     
-});
-app.post('/usuarios', (request, response) => {
+// });
+
+app.get('/usuarios', (request, response) => {
     const usuarioNovo = [{
         nome:'amigo',
-        idade: 'x'
+        idade: 'x',
+
     }]
-    response.json(usuarioNovo.push);
+    response.json(usuarioNovo.push());
     
 });
     
