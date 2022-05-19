@@ -20,19 +20,29 @@ const usuarios = [{
     idade: 27,
 }];
 
-// app.get('/usuarios', (request, response) => {
-//     response.json(usuarios);
-    
-// });
-
 app.get('/usuarios', (request, response) => {
-    const usuarioNovo = [{
+    response.json(usuarios);
+    
+});
+
+app.post('/usuarios', (request, response) => {
+    const novoUsuario = [{
         nome:'amigo',
         idade: 'x',
 
     }]
-    response.json(usuarioNovo.push());
+   usuarios.push(novoUsuario);
+   response.json(novoUsuario);
+
     
+});
+
+app.put('/usuarios/:idUsuario', (request, response) => {
+    const idUsuario = request.params.idUsuario;
+
+    console.log(idUsuario);
+
+    response.send('Rotas com parametro');
 });
     
     app.listen(3000);
