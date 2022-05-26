@@ -1,4 +1,71 @@
-body {background-image: url('../img/Rectangle\ 3.png')}
-body {background-position-x: 10cm;}
-body {background-position-y: 10cm;}
-body {background-repeat: no-repeat;}
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+section#home { 
+    background-image: url('../img/Rectangle\ 3.png');
+
+    background-repeat: no-repeat;
+    min-height: 80vh; /* porcentagem de ela q pega na tela */
+    background-size: contain;
+
+
+}
+
+section{
+    margin: 10px 0; 
+}
+
+.card {
+    background-color: rgb(230, 230, 230);
+    max-width: 256px;
+    border-radius: 15px;
+    font-family: Ropa sans, sans-serif;
+   
+}
+
+.card .container {
+padding: 15px;
+}
+
+.card p {
+    font-size: 10px;
+    line-height: 11px;
+    color: rgba(0, 0, 0, 0.333);
+}
+
+.card .price {
+    font-size: 25px;
+    color: #888;
+}
+
+.card .tag {
+    background-color: #f10;
+    border-radius: 25px;
+    padding: 1px 15px;
+    font-size: 20px;
+    line-height: 21px;
+    color: white;
+
+
+}
+
+.card .tag.green-bg{
+    background: #51d275;
+}
+
+.card .tag.yellow-bg{
+    background: rgb(182, 182, 113);
+}
+
+.card {display: inline-block;}
