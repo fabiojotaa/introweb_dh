@@ -1,0 +1,9 @@
+.menu .flex-direction{ 
+    display: row;
+
+}
+
+.flex-container{
+    display: flex;
+    
+}
